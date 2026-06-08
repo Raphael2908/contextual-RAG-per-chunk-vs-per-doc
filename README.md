@@ -15,6 +15,8 @@ version and a no-context baseline.
 
 ## Results (TL;DR)
 
+![Per-chunk vs per-document contextual retrieval: ingest time, cost per run, and recall@5](results/stats.jpg)
+
 On 10 distinguishable ~8,000-token synthetic contracts with 50 hand-labeled gold queries:
 
 | system        | ingest | cost    | recall@5 | nDCG@5 |
