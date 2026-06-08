@@ -1,0 +1,32 @@
+[project]
+name = "company-brain-backend"
+version = "0.1.0"
+description = "Minimal ingestion + contextual-chunking benchmark slice for the company brain"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+    "fastapi>=0.115",
+    "uvicorn[standard]>=0.32",
+    "python-multipart>=0.0.12",
+    "pydantic-settings>=2.6",
+    "psycopg[binary,pool]>=3.2",
+    "pymilvus>=2.4,<2.6",
+    "litellm>=1.55",
+    "pypdf>=5.1",
+    "python-docx>=1.1",
+    "bcrypt>=4.2",  # password hashing for the beta auth (email allow-list + first-login)
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.3",
+    "reportlab>=4.2",  # scripts/gen_pdfs.py — synthetic load-test corpus
+    "httpx>=0.27",     # scripts/e2e_bulk.py — async HTTP driver for the e2e bulk test
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["app*", "benchmark*"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"

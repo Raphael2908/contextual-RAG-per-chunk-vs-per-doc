@@ -1,0 +1,181 @@
+{
+  "run": {
+    "label": "eval8k-perchunk",
+    "timestamp_utc": "2026-06-08T02:04:09Z",
+    "api": "http://localhost:8000",
+    "batch_id": "753c196f-51b7-46de-abc5-43dd5bd814b6",
+    "mode": "dense",
+    "context_mode": "per_chunk",
+    "files_in_corpus": 10,
+    "dup_rate": 0.0,
+    "upload_concurrency": 8,
+    "k": 5
+  },
+  "ingest": {
+    "total_in_batch": 10,
+    "counts": {
+      "ready": 10
+    },
+    "ready": 10,
+    "upload_wall_s": 0.15,
+    "ingest_only_wall_s": 146.83,
+    "ingest_total_wall_s": 146.97,
+    "throughput_docs_per_s": 0.068,
+    "chunk_count_total": 268,
+    "cost": {
+      "total_usd": 0.413653,
+      "avg_usd_per_doc": 0.041365
+    },
+    "tokens": {
+      "llm_input_tokens": 1899965,
+      "llm_output_tokens": 10394,
+      "embed_tokens": 115685,
+      "avg_llm_input_per_doc": 189996.5,
+      "avg_llm_output_per_doc": 1039.4,
+      "avg_embed_per_doc": 11568.5
+    },
+    "failures": []
+  },
+  "retrieval": {
+    "query_count": 18,
+    "latency_ms": {
+      "p50": 600.83,
+      "p95": 798.5,
+      "min": 593.53,
+      "max": 803.12,
+      "mean": 637.36
+    },
+    "avg_hits": 5,
+    "query_embed_tokens_total": 151,
+    "query_embed_cost_usd_total": 1.812e-05,
+    "per_query": [
+      {
+        "query": "What is the confidentiality obligation of the receiving party?",
+        "latency_ms": 679.84,
+        "hits": 5,
+        "embed_tokens": 14,
+        "embed_cost_usd": 1.68e-06
+      },
+      {
+        "query": "definition of confidential information",
+        "latency_ms": 593.53,
+        "hits": 5,
+        "embed_tokens": 6,
+        "embed_cost_usd": 7.2e-07
+      },
+      {
+        "query": "governing law State of Delaware",
+        "latency_ms": 600.83,
+        "hits": 5,
+        "embed_tokens": 8,
+        "embed_cost_usd": 9.6e-07
+      },
+      {
+        "query": "termination on thirty days written notice",
+        "latency_ms": 598.47,
+        "hits": 5,
+        "embed_tokens": 8,
+        "embed_cost_usd": 9.6e-07
+      },
+      {
+        "query": "limitation of liability cap on fees paid",
+        "latency_ms": 797.68,
+        "hits": 5,
+        "embed_tokens": 10,
+        "embed_cost_usd": 1.2e-06
+      },
+      {
+        "query": "indemnification cap survives termination for two years",
+        "latency_ms": 803.12,
+        "hits": 5,
+        "embed_tokens": 13,
+        "embed_cost_usd": 1.56e-06
+      },
+      {
+        "query": "force majeure acts of God and war",
+        "latency_ms": 604.42,
+        "hits": 5,
+        "embed_tokens": 10,
+        "embed_cost_usd": 1.2e-06
+      },
+      {
+        "query": "disputes resolved by binding arbitration AAA rules",
+        "latency_ms": 597.88,
+        "hits": 5,
+        "embed_tokens": 11,
+        "embed_cost_usd": 1.32e-06
+      },
+      {
+        "query": "what is the consideration amount in USD",
+        "latency_ms": 595.77,
+        "hits": 5,
+        "embed_tokens": 9,
+        "embed_cost_usd": 1.08e-06
+      },
+      {
+        "query": "matter reference number for the agreement",
+        "latency_ms": 793.85,
+        "hits": 5,
+        "embed_tokens": 7,
+        "embed_cost_usd": 8.4e-07
+      },
+      {
+        "query": "mutual non-disclosure agreement between the parties",
+        "latency_ms": 607.17,
+        "hits": 5,
+        "embed_tokens": 11,
+        "embed_cost_usd": 1.32e-06
+      },
+      {
+        "query": "master services agreement payment terms",
+        "latency_ms": 600.17,
+        "hits": 5,
+        "embed_tokens": 6,
+        "embed_cost_usd": 7.2e-07
+      },
+      {
+        "query": "commercial lease agreement base rent",
+        "latency_ms": 598.55,
+        "hits": 5,
+        "embed_tokens": 7,
+        "embed_cost_usd": 8.4e-07
+      },
+      {
+        "query": "share purchase agreement closing",
+        "latency_ms": 600.86,
+        "hits": 5,
+        "embed_tokens": 5,
+        "embed_cost_usd": 6e-07
+      },
+      {
+        "query": "employment agreement obligations",
+        "latency_ms": 598.46,
+        "hits": 5,
+        "embed_tokens": 6,
+        "embed_cost_usd": 7.2e-07
+      },
+      {
+        "query": "software license agreement scope",
+        "latency_ms": 600.82,
+        "hits": 5,
+        "embed_tokens": 5,
+        "embed_cost_usd": 6e-07
+      },
+      {
+        "query": "Acme Holdings disclosing party",
+        "latency_ms": 596.52,
+        "hits": 5,
+        "embed_tokens": 9,
+        "embed_cost_usd": 1.08e-06
+      },
+      {
+        "query": "effective date of the agreement",
+        "latency_ms": 604.54,
+        "hits": 5,
+        "embed_tokens": 6,
+        "embed_cost_usd": 7.2e-07
+      }
+    ]
+  },
+  "grand_total_cost_usd": 0.413671
+}

@@ -1,0 +1,24 @@
+# Gold retrieval-quality eval set over samples/. One JSON object per line.
+#   query   — the search query
+#   doc     — the samples/ file whose clause is the answer
+#   markers — a chunk is "relevant" if its raw text contains ANY of these (case-insensitive)
+#   note    — human label for the table
+{"query": "What is the cap on each party's liability under the NDA?", "doc": "sample_agreement.md", "markers": ["two million dollars", "$2,000,000"], "note": "NDA liability cap"}
+{"query": "How long do the confidentiality obligations survive after termination?", "doc": "sample_agreement.md", "markers": ["survive termination for a period of five (5) years", "five (5) years from the date of disclosure"], "note": "confidentiality survival"}
+{"query": "What is the term of the non-disclosure agreement and how is it terminated?", "doc": "sample_agreement.md", "markers": ["continues for three (3) years", "thirty (30) days' written notice"], "note": "NDA term"}
+{"query": "Which state's law governs the non-disclosure agreement?", "doc": "sample_agreement.md", "markers": ["State of Delaware"], "note": "NDA governing law"}
+{"query": "Who are the designated representatives for Acme?", "doc": "sample_agreement.md", "markers": ["General Counsel and the VP of Corporate Development"], "note": "designated representatives"}
+{"query": "What purpose may the receiving party use the confidential information for?", "doc": "sample_agreement.md", "markers": ["evaluate and pursue a potential business relationship"], "note": "permitted purpose"}
+{"query": "When must Client pay invoices under the master services agreement?", "doc": "sample_msa.md", "markers": ["within thirty (30) days of receipt"], "note": "MSA payment terms"}
+{"query": "What interest accrues on late payments?", "doc": "sample_msa.md", "markers": ["one and one-half percent (1.5%) per month"], "note": "late payment interest"}
+{"query": "Who owns the deliverables and work product created for the client?", "doc": "sample_msa.md", "markers": ["works made for hire", "owned exclusively by Client"], "note": "IP ownership"}
+{"query": "What is the limitation of liability under the master services agreement?", "doc": "sample_msa.md", "markers": ["five million dollars ($5,000,000)", "total fees paid by Client in the twelve (12) months"], "note": "MSA liability cap"}
+{"query": "How can either party terminate the MSA for convenience?", "doc": "sample_msa.md", "markers": ["sixty (60) days' written notice"], "note": "termination for convenience"}
+{"query": "What is the warranty period for the services?", "doc": "sample_msa.md", "markers": ["ninety (90) days following delivery"], "note": "service warranty"}
+{"query": "Which state's law governs the master services agreement?", "doc": "sample_msa.md", "markers": ["Commonwealth of Massachusetts"], "note": "MSA governing law"}
+{"query": "What is the base rent per square foot in the office lease?", "doc": "sample_lease.md", "markers": ["forty-two dollars ($42.00) per rentable square foot"], "note": "base rent"}
+{"query": "How long is the office lease term?", "doc": "sample_lease.md", "markers": ["term of this Lease is five (5) years", "expiring on 31 March 2029"], "note": "lease term"}
+{"query": "How much is the security deposit for the lease?", "doc": "sample_lease.md", "markers": ["security deposit equal to two months' base rent"], "note": "security deposit"}
+{"query": "Can the tenant renew the lease, and for how long?", "doc": "sample_lease.md", "markers": ["option to renew for an additional three (3) years"], "note": "renewal option"}
+{"query": "What is the size of the leased premises?", "doc": "sample_lease.md", "markers": ["8,500 rentable square feet"], "note": "premises size"}
+{"query": "Which state's law governs the commercial lease?", "doc": "sample_lease.md", "markers": ["State of California"], "note": "lease governing law"}

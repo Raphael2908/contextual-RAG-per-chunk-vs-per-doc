@@ -1,0 +1,23 @@
+# --- Secrets & keys (never commit) ---
+.env
+.env.*
+!.env.example
+secrets/
+*.key
+
+# --- Python ---
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+*.egg-info/
+.pytest_cache/
+
+# --- Generated corpus (reproducible from gen_eval_corpus.py --seed) ---
+sample_pdfs_eval/
+sample_pdfs/
+*.pdf
+
+# --- Local runtime data ---
+/data/
