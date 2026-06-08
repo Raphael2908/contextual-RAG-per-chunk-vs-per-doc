@@ -1,7 +1,8 @@
 # Contextual RAG: per-chunk vs per-document context
 
 A small, reproducible benchmark of two contextual-retrieval strategies, on **cost, speed, and
-retrieval accuracy**.
+retrieval accuracy**. Based on Anthropic's
+[Contextual Retrieval](https://www.anthropic.com/engineering/contextual-retrieval) writeup.
 
 **Contextual retrieval** ([Anthropic, 2024](https://www.anthropic.com/news/contextual-retrieval))
 improves RAG recall by prepending a short context note to each chunk before embedding it — so a
