@@ -108,3 +108,7 @@ results/             this experiment's reports + RESULTS.md
 
 This is the trimmed ingest + benchmark core of a larger RAG system, extracted to make the experiment
 reproducible. The answer-generation, auth, and frontend layers are intentionally not included.
+
+## License
+
+MIT — see [LICENSE](LICENSE).
